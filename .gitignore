@@ -1,0 +1,15 @@
+client/node_modules
+
+hardhat/node_modules
+
+hardhat/node_modules
+.env
+hardhat/coverage
+hardhat/coverage.json
+hardhat/typechain
+hardhat/typechain-types
+
+# Hardhat files
+hardhat/cache
+hardhat/artifacts
+
