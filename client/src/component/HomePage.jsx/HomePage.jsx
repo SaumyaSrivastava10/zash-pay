@@ -42,7 +42,7 @@ export default function HomePage() {
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                   ZashPay is a peer-to-peer money lending platform that leverages blockchain technology to provide secure, transparent, and efficient financial transactions. Designed for optimal speed and user experience, ZashPay ensures seamless cryptocurrency transactions and ownership tracking.
                   </p>
-                  <p className="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">Used by</p>
+                  <p className="mt-8 text-sm text-white uppercase tracking-wide font-semibold sm:mt-10">BENEFIT BY</p>
                   <div className="mt-5 w-full sm:mx-auto sm:max-w-lg lg:ml-0">
                     <div className="flex flex-wrap items-start justify-between">
                       <div className="flex justify-center px-1">
