@@ -1,14 +1,34 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { PlusSmIcon } from '@heroicons/react/solid'
 import Dropdown from '../Component-parts/drop-down'
+
+import Web3 from "web3";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
+
+  const [connected, setConnected] = useState(false);
+
+  const connectWallet = async () => {
+    if (window.ethereum) {
+      const web3 = new Web3(window.ethereum);
+      try {
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const accounts = await web3.eth.getAccounts();
+        setConnected(true);
+      } catch (error) {
+        console.error("User denied account access");
+      }
+    } else {
+      alert('MetaMask not detected');
+    }
+  };
+
   return (
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
@@ -30,7 +50,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    src="header.png"
                     alt="Workflow"
                   />
                   <img
@@ -78,8 +98,14 @@ export default function Navbar() {
                   <button
                     type="button"
                     className="relative inline-flex items-center px-6 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    onClick={connectWallet}
                   >
-                    <span>Connect</span>
+                    {
+                      connected ?
+                      <span>Connected</span>
+                      :
+                      <span>Connect</span>
+                    }
                   </button>
                 </div>
                 <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
@@ -88,11 +114,11 @@ export default function Navbar() {
                     className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     <span className="sr-only">View notifications</span>
-                    <BellIcon className="h-6 w-6" aria-hidden="true" />
+                    <BellIcon className="h-6 w-6 z-50" aria-hidden="true" />
                   </button>
 
                   {/* Profile dropdown */}
-                  <Menu as="div" className="ml-3 relative">
+                  <Menu as="div" className="ml-3 relative z-50">
                     <div>
                       <Menu.Button className="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         <span className="sr-only">Open user menu</span>
@@ -175,21 +201,28 @@ export default function Navbar() {
                 href="#"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
-                Team
+                <Dropdown />
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
-                Projects
+                Register
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
                 href="#"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
-                Calendar
+                About
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="#"
+                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+              >
+                Contact
               </Disclosure.Button>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
