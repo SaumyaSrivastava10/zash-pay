@@ -2,7 +2,7 @@ import { Fragment, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 import { PlusSmIcon } from '@heroicons/react/solid'
-import Dropdown from '../Component-parts/drop-down'
+import Dropdown from './drop-down'
 
 import Web3 from "web3";
 import { Link } from 'react-router-dom'
@@ -81,12 +81,13 @@ export default function Navbar() {
                   >
                     Register
                   </a>
-                  <a
+                  <Link
+                    to="/about"
                     href="#"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     About
-                  </a>
+                  </Link>
                   <Link
                     to="/contact"
                     href="#"
@@ -218,7 +219,7 @@ export default function Navbar() {
                 href="#"
                 className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
               >
-                About
+                <Link>About</Link>
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"

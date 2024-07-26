@@ -3,23 +3,23 @@ import { AnnotationIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } 
 const transferFeatures = [
   {
     id: 1,
-    name: 'Competitive exchange rates',
+    name: 'Competitive Interest Rates',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'ZashPay offers competitive interest rates for peer-to-peer lending, ensuring that both lenders and borrowers benefit from mutually agreed-upon terms.',
     icon: GlobeAltIcon,
   },
   {
     id: 2,
-    name: 'No hidden fees',
+    name: 'Secure Identity Verification',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Our robust identity verification process ensures that all users are authenticated and verified.',
     icon: ScaleIcon,
   },
   {
     id: 3,
-    name: 'Transfers are instant',
+    name: 'Advanced Credit Scoring',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'ZashPay utilizes advanced credit scoring algorithms to assess the creditworthiness of borrowers fostering trust within the platform.',
     icon: LightningBoltIcon,
   },
 ]

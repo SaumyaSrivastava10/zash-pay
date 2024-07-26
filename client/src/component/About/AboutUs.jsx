@@ -1,14 +1,15 @@
 import React from 'react'
-import Contact from './Contact'
-import Footer from '../Component-parts/Footer'
 
-const ContactUs = () => {
+import Footer from '../Component-parts/Footer'
+import About from './About'
+
+const AboutUs = () => {
   return (
     <div>
-        <Contact />
+        <About />
         <Footer />
     </div>
   )
 }
 
-export default ContactUs
+export default AboutUs
