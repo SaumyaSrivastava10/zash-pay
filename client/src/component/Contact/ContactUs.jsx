@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from './contact'
+import Contact from './Contact'
 import Footer from './Footer'
 
 const ContactUs = () => {
