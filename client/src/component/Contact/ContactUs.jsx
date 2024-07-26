@@ -2,7 +2,7 @@ import React from 'react'
 import Contact from './contact'
 import Footer from './Footer'
 
-const index = () => {
+const ContactUs = () => {
   return (
     <div>
         <Contact />
@@ -11,4 +11,4 @@ const index = () => {
   )
 }
 
-export default index
+export default ContactUs
