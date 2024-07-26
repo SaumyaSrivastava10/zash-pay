@@ -48,21 +48,21 @@ export default function HomePage() {
                       <div className="flex justify-center px-1">
                         <img
                           className="h-9 sm:h-10"
-                          src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                          src="Blockchain.svg"
                           alt="Tuple"
                         />
                       </div>
                       <div className="flex justify-center px-1">
                         <img
                           className="h-9 sm:h-10"
-                          src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
+                          src="Ethereum.svg"
                           alt="Workcation"
                         />
                       </div>
                       <div className="flex justify-center px-1">
                         <img
                           className="h-9 sm:h-10"
-                          src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                          src="Metamask.svg"
                           alt="StaticKit"
                         />
                       </div>
