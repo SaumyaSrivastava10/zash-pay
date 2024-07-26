@@ -5,6 +5,7 @@ import { PlusSmIcon } from '@heroicons/react/solid'
 import Dropdown from '../Component-parts/drop-down'
 
 import Web3 from "web3";
+import { Link } from 'react-router-dom'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -61,12 +62,13 @@ export default function Navbar() {
                 </div>
                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-                  <a
+                  <Link
+                    to="/"
                     href="#"
                     className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Dashboard
-                  </a>
+                  </Link>
                   <a
                     href="#"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
@@ -85,12 +87,13 @@ export default function Navbar() {
                   >
                     About
                   </a>
-                  <a
+                  <Link
+                    to="/contact"
                     href="#"
                     className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center">
