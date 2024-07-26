@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './component/Navbar/Navbar'
-import HomePage from './component/HomePage.jsx/HomePage'
-import FeatureList from './component/HomePage.jsx/FeatureList'
+
+import LandingPage from './component/HomePage/LandingPage'
+import Contact from './component/Contact/ContactUs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,8 +11,7 @@ function App() {
   return (
     <>
         <Navbar />
-        <HomePage />
-        <FeatureList />
+        <LandingPage />
     </>
   )
 }
