@@ -82,11 +82,52 @@ export default function HomePage() {
                             href="#"
                             className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
                           >
-                            <span className="sr-only">Sign in with Facebook</span>
+                            <span className="sr-only">Sign in with Google</span>
+                            <svg
+                              className="w-5 h-5"
+                              aria-hidden="true"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M19.6 10.23c0-.636-.057-1.25-.16-1.843H10v3.486h5.4c-.23 1.23-.91 2.27-1.91 2.96v2.48h3.07c1.8-1.64 2.84-4.07 2.84-6.98z"
+                                clipRule="evenodd"
+                                fill="#4285F4"
+                              />
+                              <path
+                                fillRule="evenodd"
+                                d="M10 20c2.57 0 4.72-.85 6.29-2.29l-3.07-2.48c-.85.57-1.94.91-3.22.91-2.47 0-4.56-1.67-5.3-3.91H1.55v2.52C3.11 17.98 6.33 20 10 20z"
+                                clipRule="evenodd"
+                                fill="#34A853"
+                              />
+                              <path
+                                fillRule="evenodd"
+                                d="M4.7 11.23c-.2-.57-.3-1.17-.3-1.79s.1-1.22.3-1.79V5.15H1.55C.95 6.36.6 7.73.6 9.23s.35 2.87.95 4.08l3.15-2.08z"
+                                clipRule="evenodd"
+                                fill="#FBBC05"
+                              />
+                              <path
+                                fillRule="evenodd"
+                                d="M10 3.95c1.4 0 2.67.48 3.66 1.43l2.75-2.75C14.72.85 12.57 0 10 0 6.33 0 3.11 2.02 1.55 4.77l3.15 2.1C5.44 5.62 7.53 3.95 10 3.95z"
+                                clipRule="evenodd"
+                                fill="#EA4335"
+                              />
+                            </svg>
+
+                          </a>
+                        </div>
+                        
+                        <div>
+                          <a
+                            href="#"
+                            className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+                          >
+                            <span className="sr-only">Sign in with GitHub</span>
                             <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                               <path
                                 fillRule="evenodd"
-                                d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
+                                d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
                                 clipRule="evenodd"
                               />
                             </svg>
@@ -105,21 +146,7 @@ export default function HomePage() {
                           </a>
                         </div>
 
-                        <div>
-                          <a
-                            href="#"
-                            className="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
-                          >
-                            <span className="sr-only">Sign in with GitHub</span>
-                            <svg className="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-                              <path
-                                fillRule="evenodd"
-                                d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                                clipRule="evenodd"
-                              />
-                            </svg>
-                          </a>
-                        </div>
+        
                       </div>
                     </div>
 
