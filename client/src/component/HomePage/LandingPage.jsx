@@ -1,7 +1,7 @@
 import React from 'react'
 
 import HomePage from './HomePage'
-import Footer from './Footer'
+import Footer from '../Component-parts/Footer'
 import FeatureList from './FeatureList'
 import Testimonials from './Testimonials'
 
