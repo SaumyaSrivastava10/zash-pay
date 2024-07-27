@@ -7,6 +7,7 @@ import ContactUs from './component/Contact/ContactUs'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutUs from './component/About/AboutUs'
+import Register from './component/RegisterPage/Register'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,8 +20,8 @@ function App() {
         {/* <Route path="/identity-verification" component={IdentityVerification} />
         <Route path="/credit-scoring" component={CreditScoring} />
         <Route path="/loan-management" component={LoanManagement} />
-        <Route path="/token-management" component={TokenManagement} />
-        <Route path="/registry" component={Registry} /> */}
+        <Route path="/token-management" component={TokenManagement} /> */}
+        <Route path="/register" element={<Register />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
