@@ -212,6 +212,7 @@ export default function FeatureList() {
           </div>
         </div>
       </div>
+      
     </div>
   )
 }
